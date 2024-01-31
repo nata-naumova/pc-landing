@@ -1,0 +1,48 @@
+.banners {
+  margin-bottom: 150px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider {
+  box-shadow: 0 4px 25px 3px var(--color-accent-50);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .banners {
+    margin-bottom: 80px;
+  }
+}
