@@ -5,8 +5,9 @@
   --color-bg: #111111;
   --color-fc: #f1f1f1;
 
-  --color-accent: rgb(150, 118, 255);
-  --color-accent-50: rgba(150, 118, 255, 0.5);
+  /* --color-accent: rgb(150, 118, 255); */
+  --color-accent: rgb(255, 87, 34);
+  --color-accent-50: rgba(255, 87, 34, 0.5);
 }
 
 * {
@@ -17,14 +18,6 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
-
-/* body {
-  position: relative;
-  font-size: 1.2rem;
-  color: var(--color-fc);
-  overflow-x: hidden;
-  background: var(--color-bg);
-} */
 
 body {
   min-height: 100vh;
@@ -54,9 +47,13 @@ a {
   border: none;
   outline: none;
 }
+.section {
+  margin-bottom: 120px;
+}
 
-/* section,
-header {
-  position: relative;
-  z-index: 10;
-} */
+.section__title {
+  text-transform: uppercase;
+  /* text-align: center; */
+  font-size: 46px;
+  font-weight: 400;
+}

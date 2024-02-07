@@ -1,29 +1,30 @@
+import Advantages from "../Advantages/Advantages";
 import Banners from "../Banners/Banners";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import Installment from "../Installment/Installment";
 import Services from "../Services/Services";
+import Socials from "../Socials/Socials";
+import SocialsWidget from "../SocialsWidget/SocialsWidget";
+import Testimonials from "../Testimonials/Testimonials";
+import WorkSteps from "../WorkSteps/WorkSteps";
 import styles from "./App.module.css";
 
 function App() {
-  const linesCount = 6;
-  const shapesCount = 10;
   return (
     <>
-      {/* <div className={styles.lines}>
-        {Array.from({ length: linesCount }).map((_, index) => (
-          <div key={index} className={styles.line}>
-            <div className={styles.shapes}>
-              {Array.from({ length: shapesCount }).map((_, index) => (
-                <span key={index}></span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div> */}
       <div className={styles.container}>
         <Header />
         <Banners />
         <Services />
+        <Installment />
+        <WorkSteps />
+        <Advantages />
+        <Socials /> 
+        <Testimonials />
+        <Footer />
       </div>
+      <SocialsWidget />
     </>
   );
 }

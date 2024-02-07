@@ -23,11 +23,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .slider {
   box-shadow: 0 4px 25px 3px var(--color-accent-50);
   border-radius: 20px;
   overflow: hidden;
+  max-height: 360px;
 }
 
 .link {

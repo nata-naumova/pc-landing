@@ -1,30 +1,52 @@
 import { useState } from "react";
 
 import List from "./List";
-import Buttons from "./Buttons";
-import { servicesList, servicesFiltered } from "../../constants";
+import FilterServices from "../FilterServices/FilterServices";
+import { servicesList } from "../../constants";
 
 import styles from "./Services.module.css";
 
 const Services = () => {
-  const [selectedPrice, setSelectedPrice] = useState("Все");
+  const [filtered, setFiltered] = useState(servicesList);
 
-  const filteredProducts = servicesList.filter((product) => {
-    if (selectedPrice === "Все") return true;
-    const [min, max] = selectedPrice.split("-").map(Number);
-    return product.price >= min && product.price <= max;
-  });
+  // получаем массив значений price
+  const prices = filtered.map((product) => product.price);
+  // находим минимальное значение
+  const minPrice = Math.min(...prices);
+  // находим максимальное значение
+  const maxPrice = Math.max(...prices);
+
+  const filteredByPrice = ({ from, to }) => {
+    setFiltered(
+      servicesList.filter((p) => {
+        return p.price >= from && p.price <= to;
+      })
+    );
+  };
 
   return (
     <section className={styles.services}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Лучшее решение для вас</h2>
-        <Buttons
-          servicesFiltered={servicesFiltered}
-          selectedPrice={selectedPrice}
-          setSelectedPrice={setSelectedPrice}
-        />
-        <List filteredProducts={filteredProducts} />
+        <h2 className={`section__title ${styles.title}`}>
+          Лучшее решение для вас
+        </h2>
+        <div className={styles.box}>
+          <button
+            key="Все"
+            type="button"
+            onClick={() => setSelectedPrice("Все")}
+            className={styles.button}
+          >
+            Все
+          </button>
+
+          <FilterServices
+            filtered={filteredByPrice}
+            min={minPrice}
+            max={maxPrice}
+          />
+        </div>
+        <List filteredProducts={filtered} />
       </div>
     </section>
   );
