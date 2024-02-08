@@ -53,7 +53,16 @@ a {
 
 .section__title {
   text-transform: uppercase;
-  /* text-align: center; */
   font-size: 46px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 90px;
+  }
+
+  .section__title {
+    font-size: 32px;
+  }
 }
