@@ -1,5 +1,5 @@
-import { useState } from "react";
 import styles from "./DetailService.module.css";
+import SocialsList from "../Socials/SocialsList";
 
 const DetailService = ({ service }) => {
   console.log(service.img)
@@ -25,7 +25,8 @@ const DetailService = ({ service }) => {
           <span className={styles.price}>{service.price} рублей</span>
           <button className={styles.button}>Узнать подробности</button>
         </div>
-        <p>Соц сети</p>
+        <h2 className={styles.name}>Наши соц сети:</h2>
+        <SocialsList />
       </div>
     </div>
   );
