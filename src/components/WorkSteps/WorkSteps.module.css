@@ -20,7 +20,7 @@
   z-index: -1;
   color: var(--color-bg);
   font-size: 300px;
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 2px 0 white, 0 -2px white, -2px 0 white, 0 2px white;
   opacity: 0.3;
 }

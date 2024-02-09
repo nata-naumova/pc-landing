@@ -19,7 +19,7 @@ const Banners = () => {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        loop={true}
+        // loop={true}
         pagination={{
           clickable: true,
         }}
