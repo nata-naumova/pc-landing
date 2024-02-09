@@ -17,7 +17,6 @@ const Main = () => {
   return (
     <>
       <div className="container">
-        <Header />
         <Banners />
         <Services />
         <Installment />
@@ -25,9 +24,7 @@ const Main = () => {
         <Advantages />
         <Socials />
         <Testimonials />
-        <Footer />
       </div>
-      <SocialsWidget />;
     </>
   );
 };

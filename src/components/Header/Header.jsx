@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
+      <div className={`container ${styles.container}`}>
         <div className={styles.logotype}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

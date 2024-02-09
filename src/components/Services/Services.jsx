@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import List from "./List";
 import FilterServices from "../FilterServices/FilterServices";
-import { servicesList } from "../../constants";
+import { CurrentServiceContext } from "../../contexts/CurrentServiceContext";
 
 import styles from "./Services.module.css";
 
 const Services = () => {
+  const servicesList = useContext(CurrentServiceContext);
   const [filtered, setFiltered] = useState(servicesList);
 
   // получаем массив значений price

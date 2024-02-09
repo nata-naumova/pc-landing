@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Services.module.css";
+import { Link } from "react-router-dom";
 
 const List = ({ filteredProducts }) => {
   return (
@@ -8,13 +9,13 @@ const List = ({ filteredProducts }) => {
         filteredProducts.map((product) => (
           <li key={product.id} className={styles.item}>
             <div className={styles.itemTop}>
-              <img src="card-img.png" alt={product.title} />
+              <img src={product.img} alt={product.title} />
             </div>
             <div className={styles.content}>
               <h3 className={styles.name}>{product.title}</h3>
               <span className={styles.price}>{product.price} RUB</span>
               <p className={styles.desc}>В кредит или рассрочку</p>
-              <button className={styles.buttonBuy}>Купить</button>
+              <Link to={`/service/${product.id}`} className={styles.buttonBuy}>Купить</Link>
             </div>
           </li>
         ))

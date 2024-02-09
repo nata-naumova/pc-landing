@@ -56,9 +56,26 @@
 }
 
 body {
-  min-height: 100vh;
   color: var(--color-fc);
   background: var(--color-bg);
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
 }
 
 h1,
@@ -96,7 +113,8 @@ a {
 
 p,
 span,
-label {
+label,
+li {
   font-family: "Montserrat", sans-serif;
 }
 

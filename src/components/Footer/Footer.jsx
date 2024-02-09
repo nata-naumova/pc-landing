@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.box}>
+      <div className={`container ${styles.box}`}>
         <div className={styles.logotype}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -6,40 +6,52 @@ export const bannersList = [
   },
 ];
 
-// export const servicesFiltered = ["Все", "10000-20000", "2000-10000"];
-
 export const servicesList = [
   {
     id: 1,
-    title: "Poha",
-    category: "Breakfast",
-    price: 4500,
-    img: "https://c.ndtvimg.com/2021-08/loudr2go_aloo-poha_625x300_05_August_21.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350",
-    desc: " Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. Kanda poha, soya poha, Indori poha, Nagpur Tari Poha are a few examples",
+    title: "Игровой ПК 1",
+    price: 95000,
+    img: "https://kupibuk.com/upload/iblock/bbd/bbd7d7a6e5f99e1d3bbb754fa1765ee1.png",
+    chipset: "Intel Z690",
+    powerSupply: "650W",
+    case: "ATX Mid Tower",
+    motherboard: "ASUS TUF Gaming",
+    desc: "Мощный игровой ПК на базе 12 поколения Intel. Процессор i5-12600K с 10 ядрами позволит играть в самые требовательные новинки. Видеокарта RTX 3060 Ti отлично показывает себя в Full HD и 1440p разрешении. 16 Гб оперативной памяти достаточно для комфортной многозадачности.",
   },
   {
     id: 2,
-    title: "Poha 2",
-    category: "Breakfast",
-    price: 2000,
-    img: "https://c.ndtvimg.com/2021-08/loudr2go_aloo-poha_625x300_05_August_21.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350",
-    desc: " Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. Kanda poha, soya poha, Indori poha, Nagpur Tari Poha are a few examples",
+    title: "Игровой ПК 2",
+    price: 105000,
+    img: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/98149867/original/68fe96810746458505afd63a0884d37551980f5e/create-a-pc-part-picker-list.png",
+    chipset: "AMD B550",
+    powerSupply: "750W",
+    case: "ATX Full Tower",
+    motherboard: "MSI MPG Gaming",
+    desc: "Мощный игровой ПК на базе процессора AMD Ryzen 7 5800X, видеокарты Radeon RX 6800 и 32GB оперативной памяти. Сбалансированная конфигурация для игр в 1440p с высокими настройками графики.",
   },
+
   {
     id: 3,
-    title: "Poha 3",
-    category: "Breakfast",
-    price: 3000,
-    img: "https://c.ndtvimg.com/2021-08/loudr2go_aloo-poha_625x300_05_August_21.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350",
-    desc: " Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. Kanda poha, soya poha, Indori poha, Nagpur Tari Poha are a few examples",
+    title: "Рабочая станция 1",
+    price: 120000,
+    img: "https://static.tildacdn.com/tild3137-3564-4965-a363-386531616238/kisspng-laptop-graph.png",
+    chipset: "Intel Z690",
+    powerSupply: "850W",
+    case: "ATX Full Tower",
+    motherboard: "Gigabyte Z690 Aorus Pro",
+    desc: "Производительная рабочая станция на базе Core i9-12900K. Видеокарта RTX 3080 позволит работать с 3D графикой и видеомонтажом. 64GB оперативной памяти для комфортной многозадачности.",
   },
+
   {
     id: 4,
-    title: "Poha 4",
-    category: "Breakfast",
-    price: 4000,
-    img: "https://c.ndtvimg.com/2021-08/loudr2go_aloo-poha_625x300_05_August_21.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350",
-    desc: " Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. Kanda poha, soya poha, Indori poha, Nagpur Tari Poha are a few examples",
+    title: "Офисный ПК",
+    price: 50000,
+    img: "https://www.gigabyte.com/FileUpload/Global/KeyFeature/576/img/0010.png",
+    chipset: "Intel B660",
+    powerSupply: "500W",
+    case: "Micro ATX",
+    motherboard: "ASUS Prime B660M-A",
+    desc: "Недорогой компьютер для офисных задач на базе Core i3-12100F. Встроенная графика позволит работать с офисными программами. 512GB SSD обеспечит быструю загрузку.",
   },
 ];
 
@@ -105,19 +117,22 @@ export const testimonialsList = [
     author: "Иван",
     rating: 5,
     text: "Отличная работа! Собрали быстро и качественно. Все работает отлично уже несколько месяцев. Рекомендую!",
-    image: "https://digital-discount.ru/wp-content/uploads/d/1/b/d1b29c75bf0f4d184912958d7c906a11.jpeg",
+    image:
+      "https://digital-discount.ru/wp-content/uploads/d/1/b/d1b29c75bf0f4d184912958d7c906a11.jpeg",
   },
   {
     author: "Мария",
     rating: 4,
     text: "Понравилось обслуживание. Консультанты дали полезные советы по подбору комплектующих. Системный блок работает стабильно.",
-    image: "https://digital-discount.ru/wp-content/uploads/1/e/6/1e6cff4c678080918ee144e412fdb6f8.jpeg",
+    image:
+      "https://digital-discount.ru/wp-content/uploads/1/e/6/1e6cff4c678080918ee144e412fdb6f8.jpeg",
   },
   {
     author: "Алексей",
     rating: 5,
     text: "Я очень доволен! Сервис на высоте - быстро собрали хорошую машину для игр. Теперь можно во все новинки поиграть на максималках!",
-    image: "https://i.simpalsmedia.com/999.md/BoardImages/900x900/0fd0142c6e68c28c5cf7fa90e7cae1af.jpg",
+    image:
+      "https://i.simpalsmedia.com/999.md/BoardImages/900x900/0fd0142c6e68c28c5cf7fa90e7cae1af.jpg",
   },
   {
     author: "Ольга",
