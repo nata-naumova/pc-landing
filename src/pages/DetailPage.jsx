@@ -19,7 +19,7 @@ const DetailPage = () => {
 
   return (
     <div className="container">
-      <DetailService service={service} />
+      <DetailService service={service} />      
     </div>
   );
 };

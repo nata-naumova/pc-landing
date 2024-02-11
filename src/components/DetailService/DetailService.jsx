@@ -1,14 +1,67 @@
 import styles from "./DetailService.module.css";
 import SocialsList from "../Socials/SocialsList";
+import Tooltip from "../ui/Tooltip/Tooltip";
 
 const DetailService = ({ service }) => {
-  console.log(service.img)
   return (
     <div className={styles.detail}>
       <div className={styles.img}>
-        <img
-          src={service.img}
-          alt={service.title}
+        <img src="/demo.jpg" className={styles.image} alt={service.title} />
+        <Tooltip
+          title="Кулер"
+          text="описание"
+          bottom="23"
+          left="6"
+          height="140"
+        />
+        <Tooltip
+          title="БП"
+          text="описание"
+          bottom="40"
+          left="23"
+          height="100"
+        />
+        <Tooltip
+          title="SSD"
+          text="описание"
+          bottom="20"
+          left="30"
+          height="230"
+        />
+        <Tooltip
+          title="Видеокарта"
+          text="описание"
+          bottom="54"
+          left="39"
+          height="100"
+        />
+        <Tooltip
+          title="Процессор"
+          text="описание"
+          bottom="20"
+          left="47"
+          height="200"
+        />
+        <Tooltip
+          title="Материнская плата"
+          text="описание"
+          bottom="47"
+          left="55"
+          height="100"
+        />
+        <Tooltip
+          title="Оперативная память"
+          text="описание"
+          bottom="17"
+          right="35"
+          height="250"
+        />
+        <Tooltip
+          title="Корпус"
+          text="описание"
+          bottom="58"
+          right="25"
+          height="100"
         />
       </div>
       <div className={styles.content}>
