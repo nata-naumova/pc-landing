@@ -26,7 +26,7 @@ const Services = () => {
   };
 
   return (
-    <section className="section">
+    <section className="section" id="services">
       <div className={styles.container}>
         <h2 className={`section__title ${styles.title}`}>
           Лучшее решение для вас

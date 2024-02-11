@@ -67,11 +67,9 @@ body {
   height: 100vh;
 }
 
-header {
-}
-
 main {
   flex: 1;
+  margin-top: 145px;
 }
 
 footer {
@@ -116,6 +114,13 @@ span,
 label,
 li {
   font-family: "Montserrat", sans-serif;
+}
+
+.fixedTop {
+  padding: 20px 0 !important;
+  background: var(--color-bg);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 20px 0px var(--color-accent-50);
 }
 
 .section {

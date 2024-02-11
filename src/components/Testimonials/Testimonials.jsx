@@ -4,7 +4,7 @@ import styles from "./Testimonials.module.css";
 
 const Testimonials = () => {
   return (
-    <section className="section">
+    <section className="section" id="testimonials">
       <h2 className={`section__title ${styles.title}`}>НАШИ КЕЙСЫ</h2>
       <ul className={styles.list}>
         {testimonialsList &&
