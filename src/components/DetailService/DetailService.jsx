@@ -1,6 +1,7 @@
-import styles from "./DetailService.module.css";
 import SocialsList from "../Socials/SocialsList";
 import Tooltip from "../ui/Tooltip/Tooltip";
+
+import styles from "./DetailService.module.css";
 
 const DetailService = ({ service }) => {
   return (

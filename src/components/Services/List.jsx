@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./Services.module.css";
 import { Link } from "react-router-dom";
+
+import styles from "./Services.module.css";
 
 const List = ({ filteredProducts }) => {
   return (
@@ -12,10 +13,41 @@ const List = ({ filteredProducts }) => {
               <img src={product.img} alt={product.title} />
             </div>
             <div className={styles.content}>
-              <h3 className={styles.name}>{product.title}</h3>
-              <span className={styles.price}>{product.price} RUB</span>
-              <p className={styles.desc}>В кредит или рассрочку</p>
-              <Link to={`/service/${product.id}`} className={styles.buttonBuy}>Купить</Link>
+              <div className={styles.top}>
+                <div className={styles.wrapper}>
+                  <h3 className={styles.name}>{product.title}</h3>
+                  <p className={styles.desc}>В кредит или рассрочку</p>
+                </div>
+                <div className={styles.wrapper}>
+                  <span className={styles.price}>от {product.price} ₽</span>
+                  <span className={styles.price}> 4 207 ₽/мес</span>
+                </div>
+              </div>
+              <ul className={styles.bottom}>
+                <li className={styles.bottomItem}>
+                  <span className={styles.bottomItemIcon}>ic</span>
+                  <span className={styles.bottomItemText}>Графическая карта Geforce RTX 4060</span>
+                </li>
+                <li className={styles.bottomItem}>
+                  <span className={styles.bottomItemIcon}>ic</span>
+                  <span className={styles.bottomItemText}>Процессоры 4 и 10 ядерные Intel</span>
+                </li>
+                <li className={styles.bottomItem}>
+                  <span className={styles.bottomItemIcon}>ic</span>
+                  <span className={styles.bottomItemText}>Метеринские платы на чиспесе</span>
+                </li>
+                <li className={styles.bottomItem}>
+                  <span className={styles.bottomItemIcon}>ic</span>
+                  <span className={styles.bottomItemText}>Оперативная память от 16 до 32 GB</span>
+                </li>
+                <li className={styles.bottomItem}>
+                  <span className={styles.bottomItemIcon}>ic</span>
+                  <span className={styles.bottomItemText}>Накопители SSD на 512 GB / 1TB</span>
+                </li>
+              </ul>
+              <Link to={`/service/${product.id}`} className={styles.buttonBuy}>
+                Подробнее о модели
+              </Link>
             </div>
           </li>
         ))
